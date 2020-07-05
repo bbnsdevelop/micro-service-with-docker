@@ -1,8 +1,5 @@
 # Docker Crash Course for Java Developers
 
-[![Image](https://www.springboottutorial.com/images/Course-DockerCrashCourseForJavaSpringBootDevelopers.png "Docker Crash Course for Java Spring Boot Developers")](https://www.udemy.com/course/docker-course-with-java-and-spring-boot-for-beginners/)
-
-
 ## Learn Docker creating containers for Spring Boot APIs and Microservices
 
 Learn Docker Fundamentals? Yes.   Create Containers for Microservices? Yes.     Create Containers for Full Stack Applications? Yes. Of Course. Hands-on? Of course.
