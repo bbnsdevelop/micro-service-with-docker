@@ -6,7 +6,7 @@
 
 	<groupId>com.in28minutes.rest.webservices</groupId>
 	<artifactId>01-hello-world-rest-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 	<name>hello-world-rest-api</name>
@@ -55,49 +55,71 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+				<executions> <execution> <id>unpack</id> <phase>package</phase> <goals> <goal>unpack</goal> 
+				</goals> <configuration> <artifactItems> <artifactItem> <groupId>${project.groupId}</groupId> 
+				<artifactId>${project.artifactId}</artifactId> <version>${project.version}</version> 
+				</artifactItem> </artifactItems> </configuration> </execution> </executions> 
+				</plugin> -->
+
+			<!-- <plugin> <groupId>com.spotify</groupId> <artifactId>dockerfile-maven-plugin</artifactId> 
+				<version>1.4.10</version> <executions> <execution> <id>default</id> <goals> 
+				<goal>build</goal> </goals> </execution> </executions> <configuration> <repository>bbnsdevelop/${project.name}</repository> 
+				<tag>${project.version}</tag> <skipDockerInfo>true</skipDockerInfo> </configuration> 
+				</plugin> -->
+
+			<!-- plugin para gerar imagem docker -->
+			<!-- <plugin> <groupId>com.google.cloud.tools</groupId> <artifactId>jib-maven-plugin</artifactId> 
+				<version>1.6.1</version> <configurations> <configuration> <from> <image>openjdk:alpine</image> 
+				</from> <to> <image>in28min/${project.name}</image> <tags> <tag>${project.version}</tag> 
+				<tag>latest</tag> </tags> </to> <container> <jvmFlags> <jvmFlag>-Xms512m</jvmFlag> 
+				</jvmFlags> <mainClass>com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication</mainClass> 
+				<ports> <port>8100</port> </ports> </container> </configuration>
+				<configuration> 
+				<container> <creationTime>USE_CURRENT_TIMESTAMP</creationTime> </container> 
+				</configuration>
+				 </configurations><executions> <execution> <phase>package</phase> <goals> 
+				<goal>dockerBuild</goal> </goals> </execution> </executions> </plugin> -->
+			
+			<!-- plugin para gerar uma imagem docker -->			
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.26.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<verbose>true</verbose>
+					<images>
+						<image>
+							<name>bbnsdevelop/${project.name}:${project.version}</name>
+							<build>
+								<from>openjdk:8-jdk-alpine</from>
+								<entryPoint>
+									<exec>
+										<args>java</args>
+										<args>-jar</args>
+										<args>/maven/${project.build.finalName}.jar</args>
+									</exec>
+								</entryPoint>
+								<assembly>
+									<descriptorRef>artifact</descriptorRef>
+								</assembly>
+							</build>
+						</image>
+					</images>
+				</configuration>
 				<executions>
 					<execution>
-						<id>unpack</id>
+						<id>docker-build</id>
 						<phase>package</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>${project.groupId}</groupId>
-									<artifactId>${project.artifactId}</artifactId>
-									<version>${project.version}</version>
-								</artifactItem>
-							</artifactItems>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- 
-			<plugin>
-				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.10</version>
-				<executions>
-					<execution>
-						<id>default</id>
 						<goals>
 							<goal>build</goal>
 						</goals>
 					</execution>
 				</executions>
-				<configuration>
-					<repository>bbnsdevelop/${project.name}</repository>
-					<tag>${project.version}</tag>
-					<skipDockerInfo>true</skipDockerInfo>
-				</configuration>
 			</plugin>
- 			-->
- 			
+			
+			
 		</plugins>
 
 	</build>
