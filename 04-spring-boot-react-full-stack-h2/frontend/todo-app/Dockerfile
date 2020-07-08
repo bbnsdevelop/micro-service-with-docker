@@ -1,5 +1,5 @@
 ## Stage 1 - Lets build the "deployable package"
-FROM node:7.10 as frontend-build
+FROM node:8 as frontend-build
 WORKDIR /fullstack/frontend
 
 # Step 1 - Download all package dependencies first.
