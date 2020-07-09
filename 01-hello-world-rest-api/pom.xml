@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.rest.webservices</groupId>
+	<groupId>com.bbnsdevelop.rest.webservices</groupId>
 	<artifactId>01-hello-world-rest-api</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -73,7 +73,7 @@
 				<version>1.6.1</version> <configurations> <configuration> <from> <image>openjdk:alpine</image> 
 				</from> <to> <image>in28min/${project.name}</image> <tags> <tag>${project.version}</tag> 
 				<tag>latest</tag> </tags> </to> <container> <jvmFlags> <jvmFlag>-Xms512m</jvmFlag> 
-				</jvmFlags> <mainClass>com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication</mainClass> 
+				</jvmFlags> <mainClass>com.bbnsdevelop.rest.webservices.restfulwebservices.RestfulWebServicesApplication</mainClass> 
 				<ports> <port>8100</port> </ports> </container> </configuration>
 				<configuration> 
 				<container> <creationTime>USE_CURRENT_TIMESTAMP</creationTime> </container> 

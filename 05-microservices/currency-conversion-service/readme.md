@@ -1,5 +1,5 @@
 # Currency Conversion Micro Service
-Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
+Run com.bbnsdevelop.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
 
 ## Resources
 

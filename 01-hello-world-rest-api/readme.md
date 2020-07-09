@@ -22,7 +22,7 @@
 
 ### Running the Application
 
-Run com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication as a Java Application.
+Run com.bbnsdevelop.rest.webservices.restfulwebservices.RestfulWebServicesApplication as a Java Application.
 
 - http://localhost:8080/hello-world
 
@@ -36,10 +36,10 @@ Hello World
 {"message":"Hello World"}
 ```
 
-- http://localhost:8080/hello-world/path-variable/in28minutes
+- http://localhost:8080/hello-world/path-variable/bbnsdevelop
 
 ```json
-{"message":"Hello World, in28minutes"}
+{"message":"Hello World, bbnsdevelop"}
 ```
 
 ## Docker File
@@ -60,7 +60,7 @@ ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.bbnsdevelop.rest.webservices.restfulwebservices.RestfulWebServicesApplication"]
 ```
 
 ## Plugins
@@ -136,7 +136,7 @@ ENTRYPOINT ["java","-cp","app:app/lib/*","com.in28minutes.rest.webservices.restf
 		<jvmFlags>
 			<jvmFlag>-Xms512m</jvmFlag>
 		</jvmFlags>
-		<mainClass>com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication</mainClass>
+		<mainClass>com.bbnsdevelop.rest.webservices.restfulwebservices.RestfulWebServicesApplication</mainClass>
 		<ports>
 			<port>8100</port>
 		</ports>
