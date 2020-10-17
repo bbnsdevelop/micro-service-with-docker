@@ -10,61 +10,7 @@ Do you want to learn to create containers for Java Spring Boot Applications and 
 
 Are you ready to learn about Docker and take the next step in your programming career?
 
-Do you want to join 300,000+ learners having Amazing Learning Experiences with in28Minutes?
-
 Look No Further!
-
-## Getting Started
-- [Video - Spring in 10 Steps](https://www.youtube.com/watch?v=edgZo2g-LTM)
-- [Video - Spring Boot in 10 Steps](https://www.youtube.com/watch?v=pcdpk3Yd1EA)
-- [Video - JPA/Hibernate in 10 Steps](https://www.youtube.com/watch?v=MaI0_XdpdP8)
-- [Video - React in 10 Steps](https://www.youtube.com/watch?v=SWXuXhZkNQc&t=110s)
-- [Article - Getting started with React and Spring Boot - Full Stack](https://www.springboottutorial.com/spring-boot-react-full-stack-crud-maven-application)
-- [Article - Using Spring Security and JWT with React and Spring Boot](https://www.springboottutorial.com/spring-boot-react-full-stack-with-spring-security-basic-and-jwt-authentication)
-
-#### Required Tools
-- Docker
-- Git
-- Node v8+ for npm
-- Visual Studio Code - Latest Version
-- Java 8+
-- Eclipse - Oxygen+ - (Embedded Maven From Eclipse)
-- Docker Editor Plugin - https://marketplace.eclipse.org/content/docker-editor
-
-#### Installing Guides
-
-- [Playlist - Installing Java, Eclipse & Embedded Maven](https://www.youtube.com/playlist?list=PLBBog2r6uMCSmMVTW_QmDLyASBvovyAO3)
-- [Playlist - Installing Node Js (npm) & Visual Studio Code](https://www.youtube.com/playlist?list=PLBBog2r6uMCQN4X3Aa_jM9qVjgMCHMWx6)
-
-#### Troubleshooting Installations
-- Node JS and NPM 
-  - https://docs.npmjs.com/common-errors
-  - https://docs.npmjs.com/getting-started/troubleshooting
-- Visual Studio Code
-  - https://code.visualstudio.com/docs/supporting/errors
-  - https://code.visualstudio.com/docs/supporting/FAQ
-- Eclipse and Embedded Maven
-  - Troubleshooting Guide - https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ#tip--troubleshooting-embedded-maven-in-eclipse
-  - PDF - https://github.com/in28minutes/SpringIn28Minutes/blob/master/InstallationGuide-JavaEclipseAndMaven_v2.pdf
-  - GIT Repository For Installation - https://github.com/in28minutes/getting-started-in-5-steps
-
-#### Troubleshooting Docker
-
-- Problem - Caused by: com.spotify.docker.client.shaded.javax.ws.rs.ProcessingException: java.io.IOException: No such file or directory
-- Solution - Check if docker is up and running!
-- Problem - Error creating the Docker image on MacOS - java.io.IOException: Cannot run program “docker-credential-osxkeychain”: error=2, No such file or directory
-- Solution - https://medium.com/@dakshika/error-creating-the-docker-image-on-macos-wso2-enterprise-integrator-tooling-dfb5b537b44e
-
-Removed subprocess.CalledProcessError: Command '['/usr/local/bin/docker-credential-desktop', 'get']' returned non-zero exit status 1
-I had this:
-`cat ~/.docker/config.json`
-`{"auths":{},"credsStore":"", "credsStore":"desktop","stackOrchestrator":"swarm"}`
-I updated to this:
-`{"auths":{},"credsStore":"","stackOrchestrator":"swarm"}`
-
-## Course Overview
-
-******* Course Overview *******
 
 Architectures are moving towards Microservices and Cloud. Docker makes it easy to containerize your applications and make them cloud ready.
 
@@ -97,7 +43,7 @@ You will be using containerizing a variety of projects created with  React (Fron
 - You will learn the basics of Docker Networking - HOST, BRIDGE and NONE
 - You will learn to use Docker Compose to Manage Your Containers
 - You will learn the basics of Microservices
-- You will Join 250,000 Learners having AMAZING LEARNING Experiences with in28Minutes
+
 
 ## Requirements
 - You have an attitude to learn while having fun :)
@@ -115,83 +61,81 @@ You will be using containerizing a variety of projects created with  React (Fron
 ## Step By Step Details
 
 ### Introduction to the Course
-- 00 Step 01 - Deploy Spring Boot Applications to Docker - Course Overview
-- 00 Step 02 - Deploy Spring Boot Applications to Docker - Getting Started
+- Deploy Spring Boot Applications to Docker - Course Overview
+- Deploy Spring Boot Applications to Docker - Getting Started
 
 ### Getting Started with Docker
-- 01 Step 01 - Installing Docker - Docker
-- 01 Step 02 - Your First Docker Usecase - Deploy a Spring Boot Application
-- 01 Step 03 - Important Docker Concepts - Registry, Repository, Tag, Image and Container
-- 01 Step 04 - Playing with Docker Images and Containers
-- 01 Step 05 - Understanding Docker Architecture - Docker Client, Docker Engine
-- 01 Step 06 - Why is Docker Popular
-- 01 Step 07 - Playing with Docker Images
-- 01 Step 08 - Playing with Docker Containers
-- 01 Step 09 - Playing with Docker Commands - stats, system
-- 01 Step 10 - Importing Docker Projects
+- Installing Docker - Docker
+- Your First Docker Usecase - Deploy a Spring Boot Application
+- Important Docker Concepts - Registry, Repository, Tag, Image and Container
+- Playing with Docker Images and Containers
+- Understanding Docker Architecture - Docker Client, Docker Engine
+- Why is Docker Popular
+- Playing with Docker Images
+- Playing with Docker Containers
+- Playing with Docker Commands - stats, system
+- Importing Docker Projects
 
 ### Containerizing Java Spring Boot Hello World Rest API with Docker
-- 02 Step 01 - Setting up 01 Spring Boot Hello World Rest API in Local 
-- 02 Step 02 - Build Docker Image Manually for 01 Hello World Rest API
-- 02 Step 03 - Use Dockerfile to Build Docker Image
-- 02 Step 04 - Understanding Docker Image Layers, Caching and Dockerfile Instructions
-- 02 Step 05 - Using Dockerfile Spotify Plugin to Create Docker Images
-- 02 Step 06 - Create a generic reusable Dockerfile
-- 02 Step 07 - Improving Caching of Docker Images by Adding Libraries in a Separate Step
-- 02 Step 08 - Using JIB Plugin to Create Docker Images
-- 02 Step 09 - Using Fabric8 Docker Maven Plugin to Create Docker Images
+- Setting up 01 Spring Boot Hello World Rest API in Local 
+- Build Docker Image Manually for 01 Hello World Rest API
+- Use Dockerfile to Build Docker Image
+- Understanding Docker Image Layers, Caching and Dockerfile Instructions
+- Using Dockerfile Spotify Plugin to Create Docker Images
+- Create a generic reusable Dockerfile
+- Improving Caching of Docker Images by Adding Libraries in a Separate Step
+- Using JIB Plugin to Create Docker Images
+- Using Fabric8 Docker Maven Plugin to Create Docker Images
 
 ### Containerizing Java Spring Boot Todo Web Application with Docker
-- 03 Step 01 - Setting up 02 Spring Boot Todo Web Application in Local 
-- 03 Step 02 - Create Docker Image for Spring Boot Todo Web Application
-- 03 Step 03 - Understanding ENTRYPOINT, CMD, COPY and ADD instructions
-- 03 Step 04 - Pushing 02 Spring Boot Todo Web Application to Docker Hub
+- Setting up 02 Spring Boot Todo Web Application in Local 
+- Create Docker Image for Spring Boot Todo Web Application
+- Understanding ENTRYPOINT, CMD, COPY and ADD instructions
+- Pushing 02 Spring Boot Todo Web Application to Docker Hub
 
 ### Containerizing Java Spring Boot Todo Web Application using MySQL with Docker
-- 04 Step 01 - Code Review of 03 Todo Web Application MySQL
-- 04 Step 02 - Running MySQL as Docker Container on Local
-- 04 Step 03 - Connect Spring Boot Todo Web App to MySQL on Local
-- 04 Step 04 - Create Docker Image for 03 Todo Web Application and Use Link to connect
-- 04 Step 05 - Exploring Docker Networking - HOST, BRIDGE and NONE
-- 04 Step 06 - Creating a Custom Network and Connect MySQL and WebApplication to the network
-- 04 Step 07 - Using Docker Volumes to Persist Data
-- 04 Step 08 - Playing with Docker Compose
+- Code Review of 03 Todo Web Application MySQL
+- Running MySQL as Docker Container on Local
+- Connect Spring Boot Todo Web App to MySQL on Local
+- Create Docker Image for 03 Todo Web Application and Use Link to connect
+- Exploring Docker Networking - HOST, BRIDGE and NONE
+- Creating a Custom Network and Connect MySQL and WebApplication to the network
+- Using Docker Volumes to Persist Data
+- Playing with Docker Compose
 
 ### Containerize Java Spring Boot React Full Stack Application with Docker
-- 05 Step 01 - Exploring 04 Java Full Stack Spring Boot React App
-- 05 Step 02 - Running React Frontend in Local
-- 05 Step 03 - Containerizing Java REST API Backend
-- 05 Step 04 - Creating Multi Stage Docker Build for React Frontend Code
-- 05 Step 05 - Improve Front End Docker Build - dockerignore
-- 05 Step 06 - Using Multi Stage Docker Build for Java REST API Backend
-- 05 Step 07 - Running Java REST API Backend Docker Image
-- 05 Step 08 - Exploring Docker Compose
-- 05 Step 09 - Running Full Stack Application with Docker Compose
-- 05 Step 10 - Using Docker Compose for Java Spring Boot Todo Web Application with MySQL
+- Exploring 04 Java Full Stack Spring Boot React App
+- Running React Frontend in Local
+- Containerizing Java REST API Backend
+- Creating Multi Stage Docker Build for React Frontend Code
+- Improve Front End Docker Build - dockerignore
+- Using Multi Stage Docker Build for Java REST API Backend
+- Running Java REST API Backend Docker Image
+- Exploring Docker Compose
+- Running Full Stack Application with Docker Compose
+- Using Docker Compose for Java Spring Boot Todo Web Application with MySQL
 
 ### Getting started with CCS and CES Microservices on Docker
-- 06 Step 01 - Introduction to Microservices
-- 06 Step 02 - Advantages of Microservices
-- 06 Step 03 - Understanding Docker and Microservices - An Amazing Combo
-- 06 Step 04 - Overview of CCS and CES Spring Boot Microservices
-- 06 Step 05 - Create Docker Images and Containers for CCS and CES Microservices
-- 06 Step 06 - Run CCS and CES Microservices using Docker Compose
+- Introduction to Microservices
+- Advantages of Microservices
+- Understanding Docker and Microservices - An Amazing Combo
+- Overview of CCS and CES Spring Boot Microservices
+- Create Docker Images and Containers for CCS and CES Microservices
+- Run CCS and CES Microservices using Docker Compose
 
 ### Using Eureka Naming Service with Spring Boot Microservices and Docker
-- 07 Step 01 - Understanding the need for Service Registry
-- 07 Step 02 - Create Docker Images for Eureka Naming Server
-- 07 Step 03 - Configure and Run CES and CCS Microservices with Eureka Service
+- Understanding the need for Service Registry
+- Create Docker Images for Eureka Naming Server
+- Configure and Run CES and CCS Microservices with Eureka Service
 
 ### Using Zuul API Gateway with Spring Boot Microservices and Docker
-- 08 Step 01 - Configure CES and CCS Microservices with Zuul API Gateway
-- 08 Step 02 - Use Docker Compose to Run Microservices with Zuul
+- Configure CES and CCS Microservices with Zuul API Gateway
+- Use Docker Compose to Run Microservices with Zuul
 
 ### Distributed Tracing with Zipkin and RabbitMq
-- 09 Step 01 - Introduction to Zipkin and Update Microservices to Connect to Zipkin
-- 09 Step 02 - Using Docker Compose to Launch Zipkin, RabbitMq and Microservices
-- 09 Step 03 - Running Zipkin, RabbitMq and Microservices
-- 09 Step 04 - Thank You
-
+- Introduction to Zipkin and Update Microservices to Connect to Zipkin
+- Using Docker Compose to Launch Zipkin, RabbitMq and Microservices
+- Running Zipkin, RabbitMq and Microservices
 
 ## Diagrams
 
@@ -272,18 +216,18 @@ HostOS -- CloudInfrastructure [style=invis]
 ```
 docker container exec unruffled_tereshkova ls /tmp
 docker container cp target/hello-world-rest-api.jar 54cf414254e48d5f68c4d468b2dd4cbdd95d17f9e2074fdb9df7f64987697f2b:/tmp
-docker container commit unruffled_tereshkova in28min/hello-world-rest-api:manual 
-docker run -p 8080:8080 in28min/hello-world-rest-api:manual
-docker container commit --change='CMD ["java","-jar","/tmp/hello-world-rest-api.jar"]' unruffled_tereshkova in28min:hello-world-rest-api:manual2
-docker run -p 8080:8080 in28min/hello-world-rest-api:manual2
-docker inspect in28min/hello-world-rest-api:dockerfile1
-docker history in28min/hello-world-rest-api:dockerfile1
+docker container commit unruffled_tereshkova bbnsdevelop/hello-world-rest-api:manual 
+docker run -p 8080:8080 bbnsdevelop/hello-world-rest-api:manual
+docker container commit --change='CMD ["java","-jar","/tmp/hello-world-rest-api.jar"]' unruffled_tereshkova bbnsdevelop:hello-world-rest-api:manual2
+docker run -p 8080:8080 bbnsdevelop/hello-world-rest-api:manual2
+docker inspect bbnsdevelop/hello-world-rest-api:dockerfile1
+docker history bbnsdevelop/hello-world-rest-api:dockerfile1
 
-docker build -t in28min/hello-world-rest-api:dockerfile1 .
-docker run -p 8080:8080 in28min/hello-world-rest-api:dockerfile1
-docker history in28min/hello-world-rest-api:dockerfile1
+docker build -t bbnsdevelop/hello-world-rest-api:dockerfile1 .
+docker run -p 8080:8080 bbnsdevelop/hello-world-rest-api:dockerfile1
+docker history bbnsdevelop/hello-world-rest-api:dockerfile1
 
-docker run -p 8080:8080 in28min/hello-world-rest-api:0.0.1-SNAPSHOT
+docker run -p 8080:8080 bbnsdevelop/hello-world-rest-api:0.0.1-SNAPSHOT
 
 mvn docker:build
 docker run -p 8080:8080 webservices/01-hello-world-rest-api
@@ -293,22 +237,22 @@ docker container exec 7714 ls /maven
 docker run -p 8080:8080 01-hello-world-rest-api:latest
 
 #/02-todo-web-application-h2/
-docker run -p 8080:8080 in28min/todo-web-application-h2:0.0.1-SNAPSHOT
-docker run -p 8080:8080 in28min/todo-web-application-h2:0.0.1-SNAPSHOT ping google.com
-docker run -p 8080:8080 in28min/hello-world-rest-api:dockerfile1 param1 param2
-docker run -p 8080:8080 in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker run -p 8080:8080 bbnsdevelop/todo-web-application-h2:0.0.1-SNAPSHOT
+docker run -p 8080:8080 bbnsdevelop/todo-web-application-h2:0.0.1-SNAPSHOT ping google.com
+docker run -p 8080:8080 bbnsdevelop/hello-world-rest-api:dockerfile1 param1 param2
+docker run -p 8080:8080 bbnsdevelop/todo-web-application-mysql:0.0.1-SNAPSHOT
 
-docker run -p 8080:8080 --network=host  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT ping http://localhost:8080 
+docker run -p 8080:8080 --network=host  bbnsdevelop/todo-web-application-mysql:0.0.1-SNAPSHOT ping http://localhost:8080 
 
 docker network ls
 docker inspect bridge
-docker container run -p 8080:8080 --link=mysql -e RDS_HOSTNAME=mysql  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker container run -p 8080:8080 --link=mysql -e RDS_HOSTNAME=mysql  bbnsdevelop/todo-web-application-mysql:0.0.1-SNAPSHOT
 
 docker network create web-application-mysql-network
 docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-user --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 --network=web-application-mysql-network mysql:5.7
-docker container run -p 8080:8080 --network=web-application-mysql-network -e RDS_HOSTNAME=mysql  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker container run -p 8080:8080 --network=web-application-mysql-network -e RDS_HOSTNAME=mysql  bbnsdevelop/todo-web-application-mysql:0.0.1-SNAPSHOT
 docker container restart mysql
-docker container run -p 8080:8080 --network=web-application-mysql-network -e RDS_HOSTNAME=mysql  in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+docker container run -p 8080:8080 --network=web-application-mysql-network -e RDS_HOSTNAME=mysql  bbnsdevelop/todo-web-application-mysql:0.0.1-SNAPSHOT
 
 docker container prune
 
@@ -317,16 +261,16 @@ docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=tod
 
 
 #/04-spring-boot-react-full-stack-h2/restful-web-services/
-docker tag 3f4765872126 in28min/rest-api-full-stack:2stagebuild
-docker run -p 8080:8080 in28min/rest-api-full-stack:2stagebuild
+docker tag 3f4765872126 bbnsdevelop/rest-api-full-stack:2stagebuild
+docker run -p 8080:8080 bbnsdevelop/rest-api-full-stack:2stagebuild
 
 npm install
 npm start
 npm run build
 
 docker network create currency-network
-docker run -p 8000:8000 --network=currency-network --name=currency-exchange-service in28min/currency-exchange-service:0.0.1-SNAPSHOT
-docker run -p 8100:8100 --network=currency-network --name=currency-conversion-service --env CURRENCY_EXCHANGE_URI=http://currency-exchange-service:8000 -d in28min/currency-conversion-service:0.0.1-SNAPSHOT
+docker run -p 8000:8000 --network=currency-network --name=currency-exchange-service bbnsdevelop/currency-exchange-service:0.0.1-SNAPSHOT
+docker run -p 8100:8100 --network=currency-network --name=currency-conversion-service --env CURRENCY_EXCHANGE_URI=http://currency-exchange-service:8000 -d bbnsdevelop/currency-conversion-service:0.0.1-SNAPSHOT
 
 docker-compose up
 docker-compose up -d
@@ -339,18 +283,18 @@ docker system prune -a
 
 docker search mysql
 docker images
-docker tag in28min/todo-rest-api-h2:1.0.0.RELEASE latest
+docker tag bbnsdevelop/todo-rest-api-h2:1.0.0.RELEASE latest
 docker rmi latest:latest
 docker pull mysql
 docker image ls --format='{{json .}}'
 
-docker container run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker container run -p 5000:5000 -d bbnsdevelop/todo-rest-api-h2:1.0.0.RELEASE
 docker container pause 6478
 docker container unpause 6478
 
-docker run -p 5000:5000 in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
-docker run -p 5000:5000 -d in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
-docker run -p 5000:5000 -d --restart=always in28min/todo-rest-api-h2:0.0.1-SNAPSHOT
+docker run -p 5000:5000 bbnsdevelop/todo-rest-api-h2:0.0.1-SNAPSHOT
+docker run -p 5000:5000 -d bbnsdevelop/todo-rest-api-h2:0.0.1-SNAPSHOT
+docker run -p 5000:5000 -d --restart=always bbnsdevelop/todo-rest-api-h2:0.0.1-SNAPSHOT
 
 docker events
 docker top c710
@@ -377,13 +321,3 @@ web-application-mysql-network
 currency-network
 05-microservices_currency-compose-network
 ```
-### Troubleshooting
-- Refer our TroubleShooting Guide - https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ
-
-## Youtube Playlists - 500+ Videos
-
-[Click here - 30+ Playlists with 500+ Videos on Spring, Spring Boot, REST, Microservices and the Cloud](https://www.youtube.com/user/rithustutorials/playlists?view=1&sort=lad&flow=list)
-
-## Keep Learning in28Minutes
-
-in28Minutes is creating amazing solutions for you to learn Spring Boot, Full Stack and the Cloud - Docker, Kubernetes, AWS, React, Angular etc. - [Check out all our courses here](https://github.com/in28minutes/learn)
