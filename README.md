@@ -1,4 +1,4 @@
-# Docker Crash Course for Java Developers
+# Docker Crash Course for Java Developers 
 
 ## Learn Docker creating containers for Spring Boot APIs and Microservices
 
